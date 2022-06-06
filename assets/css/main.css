@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   color: #686868;
   line-height: 1.6;
@@ -104,8 +104,8 @@ p {
   font-weight: 600;
 }
 .hero .fet-box .fet-body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), color-stop(42%, white));
-  background: linear-gradient(to bottom, #e2e2e2 0%, white 42%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(226, 226, 226)), color-stop(42%, rgb(255, 255, 255)));
+  background: linear-gradient(to bottom, rgb(226, 226, 226) 0%, rgb(255, 255, 255) 42%);
   padding: 12px 12px;
   border-radius: 12px;
   border: 2px solid #fb9154;
@@ -146,8 +146,8 @@ p {
 }
 
 .sub-form {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4ab93e), color-stop(17%, #63e04d), to(#5bac28));
-  background: linear-gradient(to bottom, #4ab93e 0%, #63e04d 17%, #5bac28 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(74, 185, 62)), color-stop(17%, rgb(99, 224, 77)), to(rgb(91, 172, 40)));
+  background: linear-gradient(to bottom, rgb(74, 185, 62) 0%, rgb(99, 224, 77) 17%, rgb(91, 172, 40) 100%);
   -webkit-box-shadow: 0 0 7px 7px rgba(86, 205, 100, 0.33);
           box-shadow: 0 0 7px 7px rgba(86, 205, 100, 0.33);
   border-radius: 12px;
@@ -568,4 +568,82 @@ p {
   display: inline-block;
   text-decoration: underline;
   margin: 4px 3px;
+}
+
+.page-bg {
+  background-color: #222222;
+  min-height: 73vh;
+}
+
+.pending-box {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 14px;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px 20px;
+  border: 2px solid #faaa29;
+}
+@media only screen and (max-width: 767px) {
+  .pending-box {
+    padding: 16px 16px;
+  }
+}
+.pending-box i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 26px;
+  background-color: #faaa29;
+  margin-bottom: 13px;
+}
+@media only screen and (max-width: 767px) {
+  .pending-box i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+}
+.pending-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .pending-box h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+}
+.pending-box p {
+  font-size: 14.5px;
+}
+@media only screen and (max-width: 767px) {
+  .pending-box p {
+    font-size: 14px;
+  }
+}
+.pending-box .small {
+  margin-top: 15px;
+  font-size: 12px;
+  color: red;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .pending-box .small {
+    margin-top: 13px;
+  }
+}
+.pending-box.success-box {
+  border-color: #6be25b;
+}
+.pending-box.success-box i {
+  background-color: #6be25b;
 }
